@@ -1,322 +1,388 @@
 <div align="center">
 
-# 👨‍💻 Hi, I'm Tajawaz Solutions
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=5F2DED&center=true&vCenter=true&repeat=true&width=600&lines=Full+Stack+Developer+%F0%9F%9A%80;Vibe+Coding+Enthusiast+%F0%9F%8E%A8;Building+Digital+Solutions+%E2%9C%A8;Open+for+Collaboration+%F0%9F%A4%9D)
-
-<a href="https://www.tajawaz.my.id">
-  <img src="https://img.shields.io/badge/🌐_Website-tajawaz.my.id-5F2DED?style=for-the-badge" />
-</a>
-<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=5F2DED&style=for-the-badge" />
-<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=followers">
-  <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&color=5F2DED&logo=github" />
-</a>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=TAJAWAZ%20SOLUTIONS&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Building%20The%20Future%20With%20Code&descAlignY=55&descSize=20" width="100%"/>
 
 </div>
 
-## 🚀 About Me
+<br/>
 
-```typescript
-const tajawazSolutions = {
-    name: "Tajawaz Solutions",
-    website: "www.tajawaz.my.id",
-    location: "Parung, West Java, Indonesia 🇮🇩",
-    role: "Full Stack Developer",
-    passion: ["Vibe Coding", "Clean Code", "Innovation"],
-    currentFocus: "Building next-generation web applications",
-    available: "Open for freelance & collaboration",
-    motto: "Code with purpose, design with soul 💜"
-};
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=5F2DED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Full+Stack+Developer+%F0%9F%9A%80;AI+%26+Web3+Enthusiast+%F0%9F%A4%96;Crafting+Digital+Experiences+%E2%9C%A8" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🌐_tajawaz.my.id-5F2DED?style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=5F2DED&style=for-the-badge&label=PROFILE+VIEWS" />
+  <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&color=5F2DED&labelColor=1a1a2e&logo=github&label=FOLLOWERS" />
+</p>
+
+<br/>
+
+<!-- ============================================ -->
+<!-- ABOUT SECTION -->
+<!-- ============================================ -->
+
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+
+### 👨‍💻 **ABOUT ME**
+
+```yaml
+name: Tajawaz Solutions
+role: Full Stack Developer
+location: Parung, West Java, Indonesia 🇮🇩
+website: www.tajawaz.my.id
+
+interests:
+  - Vibe Coding
+  - AI Integration
+  - Web3 Development
+  - Clean Architecture
+
+currently:
+  learning: ["System Design", "Cloud Architecture", "AI/ML"]
+  building: ["Next-gen Web Apps", "SaaS Products"]
+  
+availability: Open for Freelance & Collaboration
+
+philosophy: "Code with purpose, design with soul"
 ```
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+<br clear="right"/>
 
-## 💻 Tech Stack
-
-<details>
-<summary><b>🎨 Frontend Development</b> (Click to expand)</summary>
 <br/>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+<!-- ============================================ -->
+<!-- TECH STACK -->
+<!-- ============================================ -->
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+## 🛠️ **TECH STACK**
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-
+<details>
+<summary><b>Frontend Development</b></summary>
+<br/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,tailwind,bootstrap,sass&theme=dark&perline=5" />
+</p>
 </details>
 
 <details>
-<summary><b>⚙️ Backend Development</b> (Click to expand)</summary>
+<summary><b>Backend Development</b></summary>
 <br/>
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,python,django,fastapi,php,laravel,graphql&theme=dark&perline=4" />
+</p>
 </details>
 
 <details>
-<summary><b>🗄️ Database & Storage</b> (Click to expand)</summary>
+<summary><b>Database & Cloud</b></summary>
 <br/>
-
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,postgresql,mysql,redis,firebase,supabase,aws,vercel&theme=dark&perline=4" />
+</p>
 </details>
 
 <details>
-<summary><b>🛠️ Tools & DevOps</b> (Click to expand)</summary>
+<summary><b>Tools & DevOps</b></summary>
 <br/>
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,figma,postman,linux,nginx&theme=dark&perline=4" />
+</p>
 </details>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
-
-## 📊 GitHub Statistics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=5F2DED&text_color=C9D1D9"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=radical&hide_border=true&background=0D1117&stroke=5F2DED&ring=5F2DED&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=5F2DED" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&no-bg=false&margin-w=4&column=7&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" />
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
-
-## 🚀 Featured Projects
-
-<details open>
-<summary><b>🌟 Project Alpha - E-Commerce Platform</b></summary>
 <br/>
 
-Modern e-commerce platform with cutting-edge features and seamless user experience.
+<!-- ============================================ -->
+<!-- GITHUB STATS -->
+<!-- ============================================ -->
 
-**Tech Stack:**  
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+## 📊 **GITHUB ANALYTICS**
 
-**Features:**
-- 🛒 Full shopping cart system
-- 💳 Payment gateway integration
-- 📱 Fully responsive design
-- ⚡ Lightning fast performance
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9&ring_color=5F2DED&count_private=true" alt="GitHub Stats"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
+</p>
 
-🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_1)
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&stroke=5F2DED&ring=5F2DED&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=5F2DED" alt="GitHub Streak"/>
+</p>
 
-</details>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=5F2DED&line=5F2DED&point=FF6B6B&area=true&area_color=5F2DED" alt="Contribution Graph"/>
+</p>
 
-<details>
-<summary><b>🎨 Project Beta - AI Design Tool</b></summary>
 <br/>
 
-AI-powered design tool with real-time collaboration and intelligent suggestions.
+<!-- ============================================ -->
+<!-- FEATURED PROJECTS -->
+<!-- ============================================ -->
 
-**Tech Stack:**  
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+## 🚀 **FEATURED PROJECTS**
 
-**Features:**
-- 🤖 AI content generation
-- 🎨 Real-time collaboration
-- 🔒 Enterprise security
-- 📊 Analytics dashboard
+<table>
+<tr>
+<td width="50%">
+<h3 align="center">🌟 Project Alpha</h3>
+<div align="center">  
+<a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_1">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=YOUR_GITHUB_USERNAME&repo=REPO_NAME_1&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" alt="Project Alpha"/>
+</a>
+<br/><br/>
+<p>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+</p>
+<p><strong>Modern E-Commerce Platform</strong> - Full-featured shopping experience with real-time inventory management</p>
+</div>
+</td>
 
-🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_2)
+<td width="50%">
+<h3 align="center">🎨 Project Beta</h3>
+<div align="center">  
+<a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_2">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=YOUR_GITHUB_USERNAME&repo=REPO_NAME_2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" alt="Project Beta"/>
+</a>
+<br/><br/>
+<p>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+</p>
+<p><strong>AI Design Assistant</strong> - Intelligent design tool powered by GPT-4 with real-time collaboration</p>
+</div>
+</td>
+</tr>
 
-</details>
+<tr>
+<td width="50%">
+<h3 align="center">🌐 Project Gamma</h3>
+<div align="center">  
+<a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_3">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=YOUR_GITHUB_USERNAME&repo=REPO_NAME_3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" alt="Project Gamma"/>
+</a>
+<br/><br/>
+<p>
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+</p>
+<p><strong>Social Analytics Dashboard</strong> - Advanced multi-platform social media management suite</p>
+</div>
+</td>
 
-<details>
-<summary><b>🌐 Project Gamma - Social Dashboard</b></summary>
+<td width="50%">
+<h3 align="center">🔐 Project Delta</h3>
+<div align="center">  
+<a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_4">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=YOUR_GITHUB_USERNAME&repo=REPO_NAME_4&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" alt="Project Delta"/>
+</a>
+<br/><br/>
+<p>
+<img src="https://img.shields.io/badge/Web3.js-F16822?style=flat-square&logo=web3dotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" />
+<img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" />
+</p>
+<p><strong>Blockchain Wallet</strong> - Secure multi-chain crypto wallet with smart contract integration</p>
+</div>
+</td>
+</tr>
+</table>
+
+<div align="center">
+<br/>
+<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=repositories">
+  <img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-5F2DED?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+</div>
+
 <br/>
 
-Social media management dashboard with advanced analytics and scheduling.
+<!-- ============================================ -->
+<!-- BLOG & ARTICLES -->
+<!-- ============================================ -->
 
-**Tech Stack:**  
-![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+## 📝 **LATEST ARTICLES**
 
-**Features:**
-- 📈 Multi-platform integration
-- 📊 Advanced analytics
-- 🔔 Real-time notifications
-- 🎯 Content scheduling
+<table>
+<tr>
+<td width="50%">
 
-🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_3)
+### 🚀 Building Scalable Web Apps
+*Next.js 14 + Server Actions*
 
-</details>
+Learn how to build production-ready applications with the latest Next.js features and best practices.
 
-<details>
-<summary><b>🔐 Project Delta - Blockchain Wallet</b></summary>
+📅 **Nov 2024** • ⏱️ **8 min read**
+
+[Read More →](https://www.tajawaz.my.id/blog/nextjs-14)
+
+</td>
+<td width="50%">
+
+### 💡 TypeScript Best Practices
+*10 Tips for Better Code Quality*
+
+Master TypeScript with these essential tips and patterns used by senior developers.
+
+📅 **Nov 2024** • ⏱️ **6 min read**
+
+[Read More →](https://www.tajawaz.my.id/blog/typescript-tips)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 The Art of Vibe Coding
+*Creating Beautiful UIs*
+
+Discover the philosophy and techniques behind creating visually stunning and functional interfaces.
+
+📅 **Oct 2024** • ⏱️ **10 min read**
+
+[Read More →](https://www.tajawaz.my.id/blog/vibe-coding)
+
+</td>
+<td width="50%">
+
+### 🔒 Web Security in 2024
+*Essential Security Practices*
+
+Comprehensive guide to securing modern web applications against common vulnerabilities.
+
+📅 **Oct 2024** • ⏱️ **12 min read**
+
+[Read More →](https://www.tajawaz.my.id/blog/web-security)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<br/>
+<a href="https://www.tajawaz.my.id/blog">
+  <img src="https://img.shields.io/badge/READ_ALL_ARTICLES-5F2DED?style=for-the-badge&logo=hashnode&logoColor=white" />
+</a>
+</div>
+
 <br/>
 
-Secure blockchain wallet with multi-currency support and smart contract integration.
+<!-- ============================================ -->
+<!-- CURRENT FOCUS -->
+<!-- ============================================ -->
 
-**Tech Stack:**  
-![Web3.js](https://img.shields.io/badge/-Web3.js-F16822?style=flat-square&logo=web3dotjs&logoColor=white)
-![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+## 🎯 **CURRENT FOCUS**
 
-**Features:**
-- 💰 Multi-currency support
-- 🔒 Military-grade encryption
-- 📱 Mobile-first design
-- ⛓️ Smart contract integration
+<table>
+<tr>
+<td width="33%">
 
-🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_4)
+### 📚 Learning
+- Advanced System Design
+- Cloud Architecture (AWS)
+- AI & Machine Learning
+- Web3 & Smart Contracts
 
-</details>
+</td>
+<td width="33%">
 
-<div align="center">
-  
-[![Explore More](https://img.shields.io/badge/Explore_More_Projects-5F2DED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME?tab=repositories)
+### 🚀 Building
+- 5 Major Projects
+- Open Source Contributions
+- SaaS Product Launch
+- Developer Tools
 
-</div>
+</td>
+<td width="33%">
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+### 🌍 Community
+- Technical Writing
+- Mentoring Developers
+- Conference Speaking
+- Open Source Advocacy
 
-## 📝 Latest Blog Posts
+</td>
+</tr>
+</table>
 
-- 🚀 [Building Scalable Web Applications with Next.js 14](https://www.tajawaz.my.id/blog/nextjs-14)
-- 💡 [10 TypeScript Tips for Better Code Quality](https://www.tajawaz.my.id/blog/typescript-tips)
-- 🎨 [The Art of Vibe Coding: Creating Beautiful UIs](https://www.tajawaz.my.id/blog/vibe-coding)
-- 🔒 [Web Security Best Practices in 2024](https://www.tajawaz.my.id/blog/web-security)
-- ⚡ [Optimizing React Performance: A Deep Dive](https://www.tajawaz.my.id/blog/react-optimization)
+<br/>
 
-<div align="center">
-  
-[![Read More](https://img.shields.io/badge/Read_More_Articles-5F2DED?style=for-the-badge&logo=hashnode&logoColor=white)](https://www.tajawaz.my.id/blog)
+<!-- ============================================ -->
+<!-- CONNECT -->
+<!-- ============================================ -->
 
-</div>
+## 📫 **LET'S CONNECT**
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+<p align="center">
+  <a href="https://www.tajawaz.my.id">
+    <img src="https://img.shields.io/badge/Website-5F2DED?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
+  <a href="mailto:contact@tajawaz.my.id">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/YOUR_TWITTER">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/YOUR_INSTAGRAM">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</p>
 
-## 🎯 Current Focus
+<p align="center">
+  <a href="https://discord.gg/YOUR_DISCORD">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://t.me/YOUR_TELEGRAM">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+  <a href="https://github.com/YOUR_GITHUB_USERNAME">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
-```javascript
-const currentGoals2024 = {
-    learning: [
-        "Advanced System Design",
-        "Cloud Architecture (AWS)",
-        "Web3 & Blockchain",
-        "AI & Machine Learning"
-    ],
-    building: [
-        "5 Major Projects",
-        "Open Source Contributions",
-        "SaaS Product Launch"
-    ],
-    community: [
-        "Technical Writing",
-        "Mentoring Developers",
-        "Conference Speaking"
-    ]
-};
-```
+<br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+<!-- ============================================ -->
+<!-- SUPPORT -->
+<!-- ============================================ -->
 
-## 📫 Connect With Me
+## 💖 **SUPPORT MY WORK**
 
-<div align="center">
+<p align="center">
+If you find my work valuable, consider supporting me:
+</p>
 
-<a href="https://www.tajawaz.my.id">
-  <img src="https://img.shields.io/badge/🌐_Website-tajawaz.my.id-5F2DED?style=for-the-badge" />
-</a>
-<a href="mailto:contact@tajawaz.my.id">
-  <img src="https://img.shields.io/badge/📧_Email-contact@tajawaz.my.id-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+<p align="center">
+  <a href="https://github.com/YOUR_GITHUB_USERNAME">
+    <img src="https://img.shields.io/badge/⭐_Star_Repositories-5F2DED?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://ko-fi.com/YOUR_USERNAME">
+    <img src="https://img.shields.io/badge/☕_Buy_Me_Coffee-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" />
+  </a>
+  <a href="https://github.com/sponsors/YOUR_GITHUB_USERNAME">
+    <img src="https://img.shields.io/badge/💜_Sponsor-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" />
+  </a>
+</p>
 
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://twitter.com/YOUR_TWITTER">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-</a>
-<a href="https://instagram.com/YOUR_INSTAGRAM">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-</a>
+<br/>
 
-<a href="https://discord.gg/YOUR_DISCORD">
-  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
-</a>
-<a href="https://t.me/YOUR_TELEGRAM">
-  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
-</a>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
-
-## 💖 Support My Work
-
-<div align="center">
-
-If you like my work, consider supporting me:
-
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img src="https://img.shields.io/badge/⭐_Star_My_Repositories-5F2DED?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://ko-fi.com/YOUR_USERNAME">
-  <img src="https://img.shields.io/badge/☕_Buy_Me_A_Coffee-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" />
-</a>
-
-</div>
-
----
+<!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=5F2DED&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=30&fontColor=ffffff&animation=twinkling" width="100%"/>
 
 ### 💜 *"Code with purpose, design with soul"*
 
 **Building the future, one commit at a time** ✨
 
-© 2024 Tajawaz Solutions • Made with 💜 in Indonesia
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=150&section=footer" width="100%"/>
+
+**© 2024 TAJAWAZ SOLUTIONS** • Made with 💜 in Indonesia
 
 </div>
