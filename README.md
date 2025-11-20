@@ -26,33 +26,61 @@
 
 <table>
 <tr>
-<td width="55%" valign="top">
+<td width="50%" valign="top">
 
-```yaml
-name: Tajawaz Solutions
-role: Full Stack Developer
-location: Parung, West Java, Indonesia 🇮🇩
-website: www.tajawaz.my.id
+<br/>
 
-interests:
-  - Vibe Coding
-  - AI Integration
-  - Web3 Development
-  - Clean Architecture
-
-currently:
-  learning: ["System Design", "Cloud Architecture", "AI/ML"]
-  building: ["Next-gen Web Apps", "SaaS Products"]
-  
-availability: Open for Freelance & Collaboration
-
-philosophy: "Code with purpose, design with soul"
+```typescript
+const developer = {
+    name: "Tajawaz Solutions",
+    role: "Full Stack Developer",
+    location: "Parung, West Java 🇮🇩",
+    website: "www.tajawaz.my.id",
+    
+    code: ["TypeScript", "JavaScript", "Python", "PHP"],
+    technologies: {
+        frontEnd: {
+            js: ["React", "Next.js", "Vue.js"],
+            css: ["Tailwind", "Bootstrap", "SASS"]
+        },
+        backEnd: {
+            js: ["Node.js", "Express"],
+            python: ["Django", "FastAPI"],
+            php: ["Laravel"]
+        },
+        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+        devOps: ["Docker", "AWS", "Vercel", "GitHub Actions"],
+        tools: ["Git", "VS Code", "Figma", "Postman"]
+    },
+    
+    currentFocus: "Building AI-powered web applications",
+    funFact: "I debug with console.log() 🐛"
+};
 ```
 
-</td>
-<td width="45%" align="center">
+**💡 Currently Exploring:**  
+`AI Integration` • `Web3 Development` • `Cloud Architecture` • `System Design`
 
-<img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="100%"/>
+**🎯 2024 Goals:**  
+`5 Major Projects` • `Open Source Contributions` • `Tech Articles` • `Community Building`
+
+**🤝 Open For:**  
+Freelance Projects • Collaborations • Mentoring • Consulting
+
+</td>
+<td width="50%" align="center" valign="top">
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="400"/>
+
+<br/>
+
+**💜 Philosophy**
+
+*"Code with purpose, design with soul"*
+
+*"Building the future, one commit at a time"*
 
 </td>
 </tr>
