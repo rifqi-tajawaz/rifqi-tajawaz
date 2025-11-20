@@ -1,710 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tajawaz Solutions - GitHub Profile</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Consolas', 'Monaco', monospace;
-            background: #0a0e27;
-            color: #e0e0e0;
-            overflow-x: hidden;
-        }
-
-        /* Animated Background */
-        .matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.1;
-        }
-
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Header Animation */
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            animation: fadeInDown 1s ease;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #5f2ded;
-            margin-bottom: 10px;
-            text-shadow: 0 0 20px rgba(95, 45, 237, 0.5);
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px rgba(95, 45, 237, 0.5);
-            }
-            to {
-                text-shadow: 0 0 30px rgba(95, 45, 237, 0.8);
-            }
-        }
-
-        .typing-text {
-            font-size: 1.3em;
-            color: #a0a0a0;
-            border-right: 3px solid #5f2ded;
-            padding-right: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block;
-            animation: typing 3s steps(40) infinite, blink 0.7s infinite;
-        }
-
-        @keyframes typing {
-            0%, 100% { width: 0; }
-            50% { width: 100%; }
-        }
-
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-
-        /* Terminal Style Card */
-        .terminal-card {
-            background: rgba(20, 20, 40, 0.8);
-            border: 2px solid #5f2ded;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 30px rgba(95, 45, 237, 0.3);
-            animation: slideIn 0.8s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .terminal-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #5f2ded;
-        }
-
-        .terminal-dots {
-            display: flex;
-            gap: 8px;
-        }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        .dot:nth-child(1) { background: #ff5f57; animation-delay: 0s; }
-        .dot:nth-child(2) { background: #ffbd2e; animation-delay: 0.2s; }
-        .dot:nth-child(3) { background: #28c840; animation-delay: 0.4s; }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.9); }
-        }
-
-        .terminal-title {
-            margin-left: 15px;
-            color: #5f2ded;
-            font-weight: bold;
-        }
-
-        /* Code Block Animation */
-        .code-block {
-            background: rgba(10, 10, 30, 0.5);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #5f2ded;
-            margin: 20px 0;
-            font-family: 'Courier New', monospace;
-            position: relative;
-        }
-
-        .code-line {
-            margin: 8px 0;
-            opacity: 0;
-            animation: fadeInLine 0.5s ease forwards;
-        }
-
-        .code-line:nth-child(1) { animation-delay: 0.1s; }
-        .code-line:nth-child(2) { animation-delay: 0.2s; }
-        .code-line:nth-child(3) { animation-delay: 0.3s; }
-        .code-line:nth-child(4) { animation-delay: 0.4s; }
-        .code-line:nth-child(5) { animation-delay: 0.5s; }
-        .code-line:nth-child(6) { animation-delay: 0.6s; }
-
-        @keyframes fadeInLine {
-            to {
-                opacity: 1;
-            }
-        }
-
-        .keyword { color: #ff79c6; }
-        .string { color: #50fa7b; }
-        .number { color: #bd93f9; }
-        .comment { color: #6272a4; font-style: italic; }
-
-        /* Dropdown Section */
-        .dropdown-section {
-            margin: 30px 0;
-        }
-
-        .dropdown-header {
-            background: linear-gradient(135deg, #5f2ded 0%, #7e3ff2 100%);
-            padding: 15px 20px;
-            cursor: pointer;
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-            user-select: none;
-        }
-
-        .dropdown-header:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 20px rgba(95, 45, 237, 0.4);
-        }
-
-        .dropdown-icon {
-            font-size: 1.5em;
-            transition: transform 0.3s ease;
-        }
-
-        .dropdown-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease, padding 0.3s ease;
-            padding: 0 20px;
-        }
-
-        .dropdown-content.active {
-            max-height: 1000px;
-            padding: 20px;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .tech-item {
-            background: rgba(95, 45, 237, 0.1);
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid rgba(95, 45, 237, 0.3);
-            transition: all 0.3s ease;
-            opacity: 0;
-            animation: popIn 0.5s ease forwards;
-        }
-
-        .tech-item:nth-child(1) { animation-delay: 0.1s; }
-        .tech-item:nth-child(2) { animation-delay: 0.15s; }
-        .tech-item:nth-child(3) { animation-delay: 0.2s; }
-        .tech-item:nth-child(4) { animation-delay: 0.25s; }
-        .tech-item:nth-child(5) { animation-delay: 0.3s; }
-        .tech-item:nth-child(6) { animation-delay: 0.35s; }
-
-        @keyframes popIn {
-            from {
-                opacity: 0;
-                transform: scale(0.5) rotate(-5deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-
-        .tech-item:hover {
-            transform: translateY(-5px) scale(1.05);
-            background: rgba(95, 45, 237, 0.2);
-            border-color: #5f2ded;
-            box-shadow: 0 5px 20px rgba(95, 45, 237, 0.3);
-        }
-
-        .tech-icon {
-            font-size: 2em;
-            margin-bottom: 8px;
-        }
-
-        /* Project Cards */
-        .project-card {
-            background: rgba(20, 20, 40, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #5f2ded;
-            margin: 15px 0;
-            transition: all 0.3s ease;
-            animation: slideInRight 0.8s ease;
-        }
-
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .project-card:hover {
-            transform: translateX(10px);
-            box-shadow: -5px 5px 30px rgba(95, 45, 237, 0.3);
-            border-left-width: 8px;
-        }
-
-        .project-title {
-            color: #5f2ded;
-            font-size: 1.3em;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            background: rgba(95, 45, 237, 0.2);
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85em;
-            border: 1px solid rgba(95, 45, 237, 0.4);
-        }
-
-        /* Social Links */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            background: linear-gradient(135deg, #5f2ded 0%, #7e3ff2 100%);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(95, 45, 237, 0.3);
-        }
-
-        .social-btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(95, 45, 237, 0.5);
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: #6272a4;
-            animation: fadeIn 2s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .heart {
-            color: #ff79c6;
-            animation: heartbeat 1.5s infinite;
-            display: inline-block;
-        }
-
-        @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-        }
-
-        /* Floating Particles */
-        .particle {
-            position: fixed;
-            width: 4px;
-            height: 4px;
-            background: #5f2ded;
-            border-radius: 50%;
-            pointer-events: none;
-            opacity: 0;
-            animation: float 4s infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) scale(0);
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100vh) scale(1);
-                opacity: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <canvas class="matrix-bg" id="matrix"></canvas>
-
-    <div class="container">
-        <header>
-            <h1>👨‍💻 TAJAWAZ SOLUTIONS</h1>
-            <div class="typing-text">Full Stack Developer | Vibe Coding Enthusiast</div>
-        </header>
-
-        <!-- About Section -->
-        <div class="terminal-card">
-            <div class="terminal-header">
-                <div class="terminal-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="terminal-title">tajawaz@solutions:~$ whoami</div>
-            </div>
-            <div class="code-block">
-                <div class="code-line"><span class="keyword">const</span> developer = {</div>
-                <div class="code-line">  name: <span class="string">"Tajawaz Solutions"</span>,</div>
-                <div class="code-line">  website: <span class="string">"www.tajawaz.my.id"</span>,</div>
-                <div class="code-line">  location: <span class="string">"Parung, West Java 🇮🇩"</span>,</div>
-                <div class="code-line">  passion: <span class="string">"Vibe Coding & Innovation"</span>,</div>
-                <div class="code-line">  status: <span class="string">"Building the future ✨"</span></div>
-                <div class="code-line">};</div>
-            </div>
-        </div>
-
-        <!-- Tech Stack Dropdown -->
-        <div class="dropdown-section">
-            <div class="dropdown-header" onclick="toggleDropdown('frontend')">
-                <span>💻 Frontend Technologies</span>
-                <span class="dropdown-icon" id="icon-frontend">▼</span>
-            </div>
-            <div class="dropdown-content" id="content-frontend">
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">⚛️</div>
-                        <div>React</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">▲</div>
-                        <div>Next.js</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">💚</div>
-                        <div>Vue.js</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🔷</div>
-                        <div>TypeScript</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🎨</div>
-                        <div>Tailwind CSS</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">💎</div>
-                        <div>SASS</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="dropdown-section">
-            <div class="dropdown-header" onclick="toggleDropdown('backend')">
-                <span>⚙️ Backend Technologies</span>
-                <span class="dropdown-icon" id="icon-backend">▼</span>
-            </div>
-            <div class="dropdown-content" id="content-backend">
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">🟢</div>
-                        <div>Node.js</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🚂</div>
-                        <div>Express</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🐍</div>
-                        <div>Python</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🐘</div>
-                        <div>PHP</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🔥</div>
-                        <div>FastAPI</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🎸</div>
-                        <div>Django</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="dropdown-section">
-            <div class="dropdown-header" onclick="toggleDropdown('database')">
-                <span>🗄️ Database & Storage</span>
-                <span class="dropdown-icon" id="icon-database">▼</span>
-            </div>
-            <div class="dropdown-content" id="content-database">
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">🍃</div>
-                        <div>MongoDB</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🐘</div>
-                        <div>PostgreSQL</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🐬</div>
-                        <div>MySQL</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🔥</div>
-                        <div>Firebase</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">⚡</div>
-                        <div>Redis</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🚀</div>
-                        <div>Supabase</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="dropdown-section">
-            <div class="dropdown-header" onclick="toggleDropdown('tools')">
-                <span>🛠️ Tools & DevOps</span>
-                <span class="dropdown-icon" id="icon-tools">▼</span>
-            </div>
-            <div class="dropdown-content" id="content-tools">
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">📦</div>
-                        <div>Git</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🐳</div>
-                        <div>Docker</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">💻</div>
-                        <div>VS Code</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">🎨</div>
-                        <div>Figma</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">☁️</div>
-                        <div>AWS</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">▲</div>
-                        <div>Vercel</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Featured Projects -->
-        <div class="terminal-card">
-            <div class="terminal-header">
-                <div class="terminal-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="terminal-title">tajawaz@solutions:~$ ls projects/</div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">🌟 Project Alpha</div>
-                <p>Modern e-commerce platform with cutting-edge features</p>
-                <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Tailwind</span>
-                    <span class="tag">Firebase</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">🎨 Project Beta</div>
-                <p>AI-powered design tool with real-time collaboration</p>
-                <div class="project-tags">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">OpenAI</span>
-                    <span class="tag">PostgreSQL</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">🌐 Project Gamma</div>
-                <p>Social media dashboard with advanced analytics</p>
-                <div class="project-tags">
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">MongoDB</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Social Links -->
-        <div class="social-links">
-            <a href="https://www.tajawaz.my.id" class="social-btn">🌐 Website</a>
-            <a href="mailto:contact@tajawaz.my.id" class="social-btn">📧 Email</a>
-            <a href="https://github.com/YOUR_USERNAME" class="social-btn">💻 GitHub</a>
-            <a href="https://linkedin.com/in/YOUR_LINKEDIN" class="social-btn">💼 LinkedIn</a>
-        </div>
-
-        <footer>
-            <p>💜 "Code with purpose, design with soul"</p>
-            <p>Made with <span class="heart">❤️</span> by Tajawaz Solutions</p>
-            <p>© 2024 - Building the future, one commit at a time</p>
-        </footer>
-    </div>
-
-    <script>
-        // Matrix Rain Effect
-        const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ';
-        const fontSize = 14;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(10, 14, 39, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.fillStyle = '#5f2ded';
-            ctx.font = fontSize + 'px monospace';
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = chars[Math.floor(Math.random() * chars.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 50);
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-
-        // Dropdown Toggle Function
-        function toggleDropdown(id) {
-            const content = document.getElementById('content-' + id);
-            const icon = document.getElementById('icon-' + id);
-            
-            content.classList.toggle('active');
-            
-            if (content.classList.contains('active')) {
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // Create Floating Particles
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * window.innerWidth + 'px';
-            particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-            particle.style.animationDelay = Math.random() * 2 + 's';
-            document.body.appendChild(particle);
-
-            setTimeout(() => {
-                particle.remove();
-            }, 5000);
-        }
-
-        setInterval(createParticle, 300);
-
-        // Typing Animation for Code Block
-        const codeLines = document.querySelectorAll('.code-line');
-        codeLines.forEach((line, index) => {
-            line.style.animationDelay = (index * 0.1) + 's';
-        });
-    </script>
-</body>
-</html>
+<div align="center">
+
+# 👨‍💻 Hi, I'm Tajawaz Solutions
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=5F2DED&center=true&vCenter=true&repeat=true&width=600&lines=Full+Stack+Developer+%F0%9F%9A%80;Vibe+Coding+Enthusiast+%F0%9F%8E%A8;Building+Digital+Solutions+%E2%9C%A8;Open+for+Collaboration+%F0%9F%A4%9D)
+
+<a href="https://www.tajawaz.my.id">
+  <img src="https://img.shields.io/badge/🌐_Website-tajawaz.my.id-5F2DED?style=for-the-badge" />
+</a>
+<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=5F2DED&style=for-the-badge" />
+<a href="https://github.com/YOUR_GITHUB_USERNAME?tab=followers">
+  <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&color=5F2DED&logo=github" />
+</a>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
+
+</div>
+
+## 🚀 About Me
+
+```typescript
+const tajawazSolutions = {
+    name: "Tajawaz Solutions",
+    website: "www.tajawaz.my.id",
+    location: "Parung, West Java, Indonesia 🇮🇩",
+    role: "Full Stack Developer",
+    passion: ["Vibe Coding", "Clean Code", "Innovation"],
+    currentFocus: "Building next-generation web applications",
+    available: "Open for freelance & collaboration",
+    motto: "Code with purpose, design with soul 💜"
+};
+```
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 💻 Tech Stack
+
+<details>
+<summary><b>🎨 Frontend Development</b> (Click to expand)</summary>
+<br/>
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>⚙️ Backend Development</b> (Click to expand)</summary>
+<br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>🗄️ Database & Storage</b> (Click to expand)</summary>
+<br/>
+
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+</details>
+
+<details>
+<summary><b>🛠️ Tools & DevOps</b> (Click to expand)</summary>
+<br/>
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+</details>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 📊 GitHub Statistics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=5F2DED&text_color=C9D1D9"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=radical&hide_border=true&background=0D1117&stroke=5F2DED&ring=5F2DED&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=5F2DED" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&no-bg=false&margin-w=4&column=7&title_color=5F2DED&icon_color=5F2DED&text_color=C9D1D9" />
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 🚀 Featured Projects
+
+<details open>
+<summary><b>🌟 Project Alpha - E-Commerce Platform</b></summary>
+<br/>
+
+Modern e-commerce platform with cutting-edge features and seamless user experience.
+
+**Tech Stack:**  
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+
+**Features:**
+- 🛒 Full shopping cart system
+- 💳 Payment gateway integration
+- 📱 Fully responsive design
+- ⚡ Lightning fast performance
+
+🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_1)
+
+</details>
+
+<details>
+<summary><b>🎨 Project Beta - AI Design Tool</b></summary>
+<br/>
+
+AI-powered design tool with real-time collaboration and intelligent suggestions.
+
+**Tech Stack:**  
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Features:**
+- 🤖 AI content generation
+- 🎨 Real-time collaboration
+- 🔒 Enterprise security
+- 📊 Analytics dashboard
+
+🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_2)
+
+</details>
+
+<details>
+<summary><b>🌐 Project Gamma - Social Dashboard</b></summary>
+<br/>
+
+Social media management dashboard with advanced analytics and scheduling.
+
+**Tech Stack:**  
+![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+
+**Features:**
+- 📈 Multi-platform integration
+- 📊 Advanced analytics
+- 🔔 Real-time notifications
+- 🎯 Content scheduling
+
+🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_3)
+
+</details>
+
+<details>
+<summary><b>🔐 Project Delta - Blockchain Wallet</b></summary>
+<br/>
+
+Secure blockchain wallet with multi-currency support and smart contract integration.
+
+**Tech Stack:**  
+![Web3.js](https://img.shields.io/badge/-Web3.js-F16822?style=flat-square&logo=web3dotjs&logoColor=white)
+![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+
+**Features:**
+- 💰 Multi-currency support
+- 🔒 Military-grade encryption
+- 📱 Mobile-first design
+- ⛓️ Smart contract integration
+
+🔗 [View Repository](https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME_4)
+
+</details>
+
+<div align="center">
+  
+[![Explore More](https://img.shields.io/badge/Explore_More_Projects-5F2DED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME?tab=repositories)
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 📝 Latest Blog Posts
+
+- 🚀 [Building Scalable Web Applications with Next.js 14](https://www.tajawaz.my.id/blog/nextjs-14)
+- 💡 [10 TypeScript Tips for Better Code Quality](https://www.tajawaz.my.id/blog/typescript-tips)
+- 🎨 [The Art of Vibe Coding: Creating Beautiful UIs](https://www.tajawaz.my.id/blog/vibe-coding)
+- 🔒 [Web Security Best Practices in 2024](https://www.tajawaz.my.id/blog/web-security)
+- ⚡ [Optimizing React Performance: A Deep Dive](https://www.tajawaz.my.id/blog/react-optimization)
+
+<div align="center">
+  
+[![Read More](https://img.shields.io/badge/Read_More_Articles-5F2DED?style=for-the-badge&logo=hashnode&logoColor=white)](https://www.tajawaz.my.id/blog)
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 🎯 Current Focus
+
+```javascript
+const currentGoals2024 = {
+    learning: [
+        "Advanced System Design",
+        "Cloud Architecture (AWS)",
+        "Web3 & Blockchain",
+        "AI & Machine Learning"
+    ],
+    building: [
+        "5 Major Projects",
+        "Open Source Contributions",
+        "SaaS Product Launch"
+    ],
+    community: [
+        "Technical Writing",
+        "Mentoring Developers",
+        "Conference Speaking"
+    ]
+};
+```
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 📫 Connect With Me
+
+<div align="center">
+
+<a href="https://www.tajawaz.my.id">
+  <img src="https://img.shields.io/badge/🌐_Website-tajawaz.my.id-5F2DED?style=for-the-badge" />
+</a>
+<a href="mailto:contact@tajawaz.my.id">
+  <img src="https://img.shields.io/badge/📧_Email-contact@tajawaz.my.id-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<a href="https://linkedin.com/in/YOUR_LINKEDIN">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://twitter.com/YOUR_TWITTER">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+</a>
+<a href="https://instagram.com/YOUR_INSTAGRAM">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+
+<a href="https://discord.gg/YOUR_DISCORD">
+  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+</a>
+<a href="https://t.me/YOUR_TELEGRAM">
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+</a>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd758-be10-4cce-9826-46a8c5a5868a.gif" width="100%">
+
+## 💖 Support My Work
+
+<div align="center">
+
+If you like my work, consider supporting me:
+
+<a href="https://github.com/YOUR_GITHUB_USERNAME">
+  <img src="https://img.shields.io/badge/⭐_Star_My_Repositories-5F2DED?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://ko-fi.com/YOUR_USERNAME">
+  <img src="https://img.shields.io/badge/☕_Buy_Me_A_Coffee-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=5F2DED&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=30&fontColor=ffffff&animation=twinkling" width="100%"/>
+
+### 💜 *"Code with purpose, design with soul"*
+
+**Building the future, one commit at a time** ✨
+
+© 2024 Tajawaz Solutions • Made with 💜 in Indonesia
+
+</div>
