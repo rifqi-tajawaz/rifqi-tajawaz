@@ -72,7 +72,7 @@ Freelance Projects • Collaborations • Mentoring • Consulting
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="400"/>
+<img src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif" width="400"/>
 
 <br/>
 
