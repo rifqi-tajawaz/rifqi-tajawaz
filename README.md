@@ -22,9 +22,11 @@
 <!-- ABOUT SECTION -->
 <!-- ============================================ -->
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+## 👨‍💻 **ABOUT ME**
 
-### 👨‍💻 **ABOUT ME**
+<table>
+<tr>
+<td width="55%" valign="top">
 
 ```yaml
 name: Tajawaz Solutions
@@ -47,7 +49,14 @@ availability: Open for Freelance & Collaboration
 philosophy: "Code with purpose, design with soul"
 ```
 
-<br clear="right"/>
+</td>
+<td width="45%" align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="100%"/>
+
+</td>
+</tr>
+</table>
 
 <br/>
 
